@@ -61,8 +61,7 @@ function showOAuthUrl() {
     page = template.evaluate();
     SpreadsheetApp.getUi().showSidebar(page);
   } else {
-    var html = 'Access to Map is granted.';
-    page = HtmlService.createHtmlOutput(html);
+    page = HtmlService.createHtmlOutput('Access to Map is already granted.');
     SpreadsheetApp.getUi().showSidebar(page);
   }
 }
